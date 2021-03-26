@@ -15,14 +15,24 @@ padding:0;
 #glogo{
     height:92;
     width:272;
+    margin: 20px;
 }
 
-#header {
+.headfoot {
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 50px;
+    padding: 20px;
+    box-sizing:border-box;
     
+}
+
+.foot{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
 }
 
 li{
@@ -33,18 +43,30 @@ li{
 #footer{
     background-color: rgba(240, 240, 240, 0.979);
     box-sizing:border-box;
-    padding:10px;
-    
+    padding:20px;
+    flex-wrap: wrap;
+    color:rgba(80, 79, 79, 0.979)
 }
 
 
 #main{
-    grid-area:main;
     display:flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
 
 }
 
+#gsearch{
+    width:487px;
+    height:39px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:rgb(216, 215, 215)
+    
+}
+
+#dots{
+    width:24px;
+    height:24px;
+}
