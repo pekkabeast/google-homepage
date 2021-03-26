@@ -4,15 +4,12 @@ padding:0;
 }
 
 .layout {
-    display: grid;
-    grid-template-columns: 150px auto 150px;
-    grid-template-rows: 10vh 80vh auto;
-    grid-template-areas:
-    " lefthead header righthead"
-    "main main main"
-    "footer footer footer";
-    width:100vw;
-    height:100vh;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100vw;
+    height: 100vh;
 }
 
 #glogo{
@@ -20,42 +17,24 @@ padding:0;
     width:272;
 }
 
-#lefthead{
-    grid-area: lefthead;
-}
-#righthead{
-    grid-area: righthead;
+#header {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 50px;
+    
 }
 
+li{
+    display:inline;
+    padding: 10px;
+}
 
 #footer{
     background-color: rgba(240, 240, 240, 0.979);
     box-sizing:border-box;
     padding:10px;
     
-}
-
-.foot{
-    grid-area:footer;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    
-}
-
-.topbar{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
-li{
-    display:inline;
-    margin:10px;
 }
 
 
